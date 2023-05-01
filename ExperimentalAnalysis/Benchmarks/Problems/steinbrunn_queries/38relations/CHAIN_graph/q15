@@ -1,0 +1,718 @@
+{
+ "name": "q",
+ "relations": [
+  {
+   "name": "r0",
+   "baseTable": "R00",
+   "cardinality": 33825,
+   "unfilteredCardinality": 33825
+  },
+  {
+   "name": "r1",
+   "baseTable": "R01",
+   "cardinality": 22844,
+   "unfilteredCardinality": 22844
+  },
+  {
+   "name": "r2",
+   "baseTable": "R02",
+   "cardinality": 4885,
+   "unfilteredCardinality": 4885
+  },
+  {
+   "name": "r3",
+   "baseTable": "R03",
+   "cardinality": 776,
+   "unfilteredCardinality": 776
+  },
+  {
+   "name": "r4",
+   "baseTable": "R04",
+   "cardinality": 57982,
+   "unfilteredCardinality": 57982
+  },
+  {
+   "name": "r5",
+   "baseTable": "R05",
+   "cardinality": 902,
+   "unfilteredCardinality": 902
+  },
+  {
+   "name": "r6",
+   "baseTable": "R06",
+   "cardinality": 893,
+   "unfilteredCardinality": 893
+  },
+  {
+   "name": "r7",
+   "baseTable": "R07",
+   "cardinality": 9692,
+   "unfilteredCardinality": 9692
+  },
+  {
+   "name": "r8",
+   "baseTable": "R08",
+   "cardinality": 29,
+   "unfilteredCardinality": 29
+  },
+  {
+   "name": "r9",
+   "baseTable": "R09",
+   "cardinality": 305,
+   "unfilteredCardinality": 305
+  },
+  {
+   "name": "r10",
+   "baseTable": "R10",
+   "cardinality": 93,
+   "unfilteredCardinality": 93
+  },
+  {
+   "name": "r11",
+   "baseTable": "R11",
+   "cardinality": 5004,
+   "unfilteredCardinality": 5004
+  },
+  {
+   "name": "r12",
+   "baseTable": "R12",
+   "cardinality": 498,
+   "unfilteredCardinality": 498
+  },
+  {
+   "name": "r13",
+   "baseTable": "R13",
+   "cardinality": 9998,
+   "unfilteredCardinality": 9998
+  },
+  {
+   "name": "r14",
+   "baseTable": "R14",
+   "cardinality": 387,
+   "unfilteredCardinality": 387
+  },
+  {
+   "name": "r15",
+   "baseTable": "R15",
+   "cardinality": 315,
+   "unfilteredCardinality": 315
+  },
+  {
+   "name": "r16",
+   "baseTable": "R16",
+   "cardinality": 9507,
+   "unfilteredCardinality": 9507
+  },
+  {
+   "name": "r17",
+   "baseTable": "R17",
+   "cardinality": 112,
+   "unfilteredCardinality": 112
+  },
+  {
+   "name": "r18",
+   "baseTable": "R18",
+   "cardinality": 4844,
+   "unfilteredCardinality": 4844
+  },
+  {
+   "name": "r19",
+   "baseTable": "R19",
+   "cardinality": 80,
+   "unfilteredCardinality": 80
+  },
+  {
+   "name": "r20",
+   "baseTable": "R20",
+   "cardinality": 272,
+   "unfilteredCardinality": 272
+  },
+  {
+   "name": "r21",
+   "baseTable": "R21",
+   "cardinality": 61495,
+   "unfilteredCardinality": 61495
+  },
+  {
+   "name": "r22",
+   "baseTable": "R22",
+   "cardinality": 88674,
+   "unfilteredCardinality": 88674
+  },
+  {
+   "name": "r23",
+   "baseTable": "R23",
+   "cardinality": 1408,
+   "unfilteredCardinality": 1408
+  },
+  {
+   "name": "r24",
+   "baseTable": "R24",
+   "cardinality": 5563,
+   "unfilteredCardinality": 5563
+  },
+  {
+   "name": "r25",
+   "baseTable": "R25",
+   "cardinality": 93973,
+   "unfilteredCardinality": 93973
+  },
+  {
+   "name": "r26",
+   "baseTable": "R26",
+   "cardinality": 6111,
+   "unfilteredCardinality": 6111
+  },
+  {
+   "name": "r27",
+   "baseTable": "R27",
+   "cardinality": 724,
+   "unfilteredCardinality": 724
+  },
+  {
+   "name": "r28",
+   "baseTable": "R28",
+   "cardinality": 41972,
+   "unfilteredCardinality": 41972
+  },
+  {
+   "name": "r29",
+   "baseTable": "R29",
+   "cardinality": 8873,
+   "unfilteredCardinality": 8873
+  },
+  {
+   "name": "r30",
+   "baseTable": "R30",
+   "cardinality": 555,
+   "unfilteredCardinality": 555
+  },
+  {
+   "name": "r31",
+   "baseTable": "R31",
+   "cardinality": 27,
+   "unfilteredCardinality": 27
+  },
+  {
+   "name": "r32",
+   "baseTable": "R32",
+   "cardinality": 88,
+   "unfilteredCardinality": 88
+  },
+  {
+   "name": "r33",
+   "baseTable": "R33",
+   "cardinality": 7463,
+   "unfilteredCardinality": 7463
+  },
+  {
+   "name": "r34",
+   "baseTable": "R34",
+   "cardinality": 8296,
+   "unfilteredCardinality": 8296
+  },
+  {
+   "name": "r35",
+   "baseTable": "R35",
+   "cardinality": 34,
+   "unfilteredCardinality": 34
+  },
+  {
+   "name": "r36",
+   "baseTable": "R36",
+   "cardinality": 15402,
+   "unfilteredCardinality": 15402
+  },
+  {
+   "name": "r37",
+   "baseTable": "R37",
+   "cardinality": 1259,
+   "unfilteredCardinality": 1259
+  }
+ ],
+ "joins": [
+  {
+   "relations": [
+    "r0",
+    "r1"
+   ]
+  },
+  {
+   "relations": [
+    "r1",
+    "r2"
+   ]
+  },
+  {
+   "relations": [
+    "r2",
+    "r3"
+   ]
+  },
+  {
+   "relations": [
+    "r3",
+    "r4"
+   ]
+  },
+  {
+   "relations": [
+    "r4",
+    "r5"
+   ]
+  },
+  {
+   "relations": [
+    "r5",
+    "r6"
+   ]
+  },
+  {
+   "relations": [
+    "r6",
+    "r7"
+   ]
+  },
+  {
+   "relations": [
+    "r7",
+    "r8"
+   ]
+  },
+  {
+   "relations": [
+    "r8",
+    "r9"
+   ]
+  },
+  {
+   "relations": [
+    "r9",
+    "r10"
+   ]
+  },
+  {
+   "relations": [
+    "r10",
+    "r11"
+   ]
+  },
+  {
+   "relations": [
+    "r11",
+    "r12"
+   ]
+  },
+  {
+   "relations": [
+    "r12",
+    "r13"
+   ]
+  },
+  {
+   "relations": [
+    "r13",
+    "r14"
+   ]
+  },
+  {
+   "relations": [
+    "r14",
+    "r15"
+   ]
+  },
+  {
+   "relations": [
+    "r15",
+    "r16"
+   ]
+  },
+  {
+   "relations": [
+    "r16",
+    "r17"
+   ]
+  },
+  {
+   "relations": [
+    "r17",
+    "r18"
+   ]
+  },
+  {
+   "relations": [
+    "r18",
+    "r19"
+   ]
+  },
+  {
+   "relations": [
+    "r19",
+    "r20"
+   ]
+  },
+  {
+   "relations": [
+    "r20",
+    "r21"
+   ]
+  },
+  {
+   "relations": [
+    "r21",
+    "r22"
+   ]
+  },
+  {
+   "relations": [
+    "r22",
+    "r23"
+   ]
+  },
+  {
+   "relations": [
+    "r23",
+    "r24"
+   ]
+  },
+  {
+   "relations": [
+    "r24",
+    "r25"
+   ]
+  },
+  {
+   "relations": [
+    "r25",
+    "r26"
+   ]
+  },
+  {
+   "relations": [
+    "r26",
+    "r27"
+   ]
+  },
+  {
+   "relations": [
+    "r27",
+    "r28"
+   ]
+  },
+  {
+   "relations": [
+    "r28",
+    "r29"
+   ]
+  },
+  {
+   "relations": [
+    "r29",
+    "r30"
+   ]
+  },
+  {
+   "relations": [
+    "r30",
+    "r31"
+   ]
+  },
+  {
+   "relations": [
+    "r31",
+    "r32"
+   ]
+  },
+  {
+   "relations": [
+    "r32",
+    "r33"
+   ]
+  },
+  {
+   "relations": [
+    "r33",
+    "r34"
+   ]
+  },
+  {
+   "relations": [
+    "r34",
+    "r35"
+   ]
+  },
+  {
+   "relations": [
+    "r35",
+    "r36"
+   ]
+  },
+  {
+   "relations": [
+    "r36",
+    "r37"
+   ]
+  }
+ ],
+ "sizes": [
+  {
+   "relations": [
+    "r0",
+    "r1"
+   ],
+   "cardinality": 30614
+  },
+  {
+   "relations": [
+    "r1",
+    "r2"
+   ],
+   "cardinality": 16908
+  },
+  {
+   "relations": [
+    "r2",
+    "r3"
+   ],
+   "cardinality": 3850
+  },
+  {
+   "relations": [
+    "r3",
+    "r4"
+   ],
+   "cardinality": 41098
+  },
+  {
+   "relations": [
+    "r4",
+    "r5"
+   ],
+   "cardinality": 38110
+  },
+  {
+   "relations": [
+    "r5",
+    "r6"
+   ],
+   "cardinality": 894
+  },
+  {
+   "relations": [
+    "r6",
+    "r7"
+   ],
+   "cardinality": 8532
+  },
+  {
+   "relations": [
+    "r7",
+    "r8"
+   ],
+   "cardinality": 1485
+  },
+  {
+   "relations": [
+    "r8",
+    "r9"
+   ],
+   "cardinality": 89
+  },
+  {
+   "relations": [
+    "r9",
+    "r10"
+   ],
+   "cardinality": 125
+  },
+  {
+   "relations": [
+    "r10",
+    "r11"
+   ],
+   "cardinality": 3131
+  },
+  {
+   "relations": [
+    "r11",
+    "r12"
+   ],
+   "cardinality": 1875
+  },
+  {
+   "relations": [
+    "r12",
+    "r13"
+   ],
+   "cardinality": 5468
+  },
+  {
+   "relations": [
+    "r13",
+    "r14"
+   ],
+   "cardinality": 3526
+  },
+  {
+   "relations": [
+    "r14",
+    "r15"
+   ],
+   "cardinality": 372
+  },
+  {
+   "relations": [
+    "r15",
+    "r16"
+   ],
+   "cardinality": 753
+  },
+  {
+   "relations": [
+    "r16",
+    "r17"
+   ],
+   "cardinality": 5898
+  },
+  {
+   "relations": [
+    "r17",
+    "r18"
+   ],
+   "cardinality": 3479
+  },
+  {
+   "relations": [
+    "r18",
+    "r19"
+   ],
+   "cardinality": 2761
+  },
+  {
+   "relations": [
+    "r19",
+    "r20"
+   ],
+   "cardinality": 153
+  },
+  {
+   "relations": [
+    "r20",
+    "r21"
+   ],
+   "cardinality": 57806
+  },
+  {
+   "relations": [
+    "r21",
+    "r22"
+   ],
+   "cardinality": 70568
+  },
+  {
+   "relations": [
+    "r22",
+    "r23"
+   ],
+   "cardinality": 67726
+  },
+  {
+   "relations": [
+    "r23",
+    "r24"
+   ],
+   "cardinality": 4767
+  },
+  {
+   "relations": [
+    "r24",
+    "r25"
+   ],
+   "cardinality": 91685
+  },
+  {
+   "relations": [
+    "r25",
+    "r26"
+   ],
+   "cardinality": 52832
+  },
+  {
+   "relations": [
+    "r26",
+    "r27"
+   ],
+   "cardinality": 1508
+  },
+  {
+   "relations": [
+    "r27",
+    "r28"
+   ],
+   "cardinality": 10107
+  },
+  {
+   "relations": [
+    "r28",
+    "r29"
+   ],
+   "cardinality": 26054
+  },
+  {
+   "relations": [
+    "r29",
+    "r30"
+   ],
+   "cardinality": 1742
+  },
+  {
+   "relations": [
+    "r30",
+    "r31"
+   ],
+   "cardinality": 101
+  },
+  {
+   "relations": [
+    "r31",
+    "r32"
+   ],
+   "cardinality": 55
+  },
+  {
+   "relations": [
+    "r32",
+    "r33"
+   ],
+   "cardinality": 2098
+  },
+  {
+   "relations": [
+    "r33",
+    "r34"
+   ],
+   "cardinality": 7790
+  },
+  {
+   "relations": [
+    "r34",
+    "r35"
+   ],
+   "cardinality": 740
+  },
+  {
+   "relations": [
+    "r35",
+    "r36"
+   ],
+   "cardinality": 1514
+  },
+  {
+   "relations": [
+    "r36",
+    "r37"
+   ],
+   "cardinality": 8870
+  }
+ ]
+}
