@@ -11,13 +11,10 @@ from math import prod
 from qiskit_optimization.translators import from_docplex_mp
 from docplex.mp.model import Model
 from dimod import BinaryQuadraticModel
-from neal.sampler import SimulatedAnnealingSampler
 import dimod
 from math import inf
 from dadk.BinPol import BinPol
-from dadk.QUBOSolverDAv2 import QUBOSolverDAv2
 from dadk.QUBOSolverCPU import *
-from dadk.JupyterTools import SetAnnealerProfile
 
 
 # In[2]:
@@ -138,7 +135,7 @@ def generate_DWave_QUBO_for_left_deep_trees(card, pred, pred_sel, thres, num_dec
     dwave_qubo = dimod.as_bqm(ibmq_qubo.objective.linear.to_array(), ibmq_qubo.objective.quadratic.to_array(), ibmq_qubo.objective.constant, dimod.BINARY)
     return dwave_qubo, penalty_weight
 
-def generate_Fujitsu_QUBO_for_left_deep_trees_v3(card, pred, pred_sel, thres, num_decimal_pos, penalty_scaling=1):
+def generate_Fujitsu_QUBO_for_left_deep_trees(card, pred, pred_sel, thres, num_decimal_pos, penalty_scaling=1):
     ibmq_qubo, penalty_weight = generate_IBMQ_QUBO_for_left_deep_trees(card, pred, pred_sel, thres, num_decimal_pos, penalty_scaling=penalty_scaling)
     num_qubits = len(ibmq_qubo.objective.linear.to_array())
     qubo_matrix_array = np.zeros((num_qubits, num_qubits))
@@ -150,7 +147,6 @@ def generate_Fujitsu_QUBO_for_left_deep_trees_v3(card, pred, pred_sel, thres, nu
     fujitsu_qubo = BinPol(qubo_matrix_array=qubo_matrix_array, constant=ibmq_qubo.objective.constant)
     return fujitsu_qubo, penalty_weight
 
-# Current version of left-deep QUBO, supporting multiple thresholds
 def generate_legacy_IBMQ_QUBO_for_left_deep_trees(card, pred, pred_sel, log_thres, num_decimal_pos):
     
     thres = np.around(np.power(10, log_thres))
