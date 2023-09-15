@@ -1,0 +1,13 @@
+{
+ "name": "q",
+ "relations": [
+  {"name": "r0", "baseTable": "R00", "cardinality": 438.294, "unfilteredCardinality": 438.294},
+  {"name": "r1", "baseTable": "R01", "cardinality": 287514, "unfilteredCardinality": 287514}
+ ],
+ "joins": [
+  {"relations": ["r0", "r1"]}
+ ],
+ "sizes": [
+  {"relations": ["r0", "r1"], "cardinality": 1725.08}
+ ]
+}

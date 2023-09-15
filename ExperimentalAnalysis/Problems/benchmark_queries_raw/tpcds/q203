@@ -1,0 +1,18 @@
+{
+ "name": "q",
+ "relations": [
+  {"name": "r0", "baseTable": "R00", "cardinality": 1.1905, "unfilteredCardinality": 1.1905},
+  {"name": "r1", "baseTable": "R01", "cardinality": 4.76965, "unfilteredCardinality": 4.76965},
+  {"name": "r2", "baseTable": "R02", "cardinality": 2.38997, "unfilteredCardinality": 2.38997}
+ ],
+ "joins": [
+  {"relations": ["r0", "r1"]},
+  {"relations": ["r0", "r2"]},
+  {"relations": ["r1", "r2"]}
+ ],
+ "sizes": [
+  {"relations": ["r0", "r1"], "cardinality": 0.000186454},
+  {"relations": ["r0", "r2"], "cardinality": 9.34281e-05},
+  {"relations": ["r1", "r2"], "cardinality": 0.000374314}
+ ]
+}

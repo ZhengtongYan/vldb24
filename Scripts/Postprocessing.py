@@ -98,10 +98,17 @@ def get_raw_join_order(cost_vector):
 def postprocess_join_order(raw_join_order, cost_vector, num_relations, pred):
     join_order = [raw_join_order[0]]
     while len(join_order) < num_relations:
+        
         applicable_predicates = [pred_tuple for t in join_order for pred_tuple in pred if t in pred_tuple]
         neighborhood_indices = [t for t in set(sum(applicable_predicates, ())) if t not in join_order]
-        best_neighbor_relation = neighborhood_indices[np.argmax(cost_vector[neighborhood_indices])]
-        join_order.append(best_neighbor_relation)
+        
+        if len(neighborhood_indices) != 0:
+            best_neighbor_relation = neighborhood_indices[np.argmax(cost_vector[neighborhood_indices])]
+            join_order.append(best_neighbor_relation)
+        else:
+            global_indices = [x for x in raw_join_order if x not in join_order]
+            best_global_relation = global_indices[np.argmax(cost_vector[global_indices])]
+            join_order.append(best_global_relation)
     return join_order
    
 def readout(response, card, pred, pred_sel, card_dict):
@@ -110,6 +117,7 @@ def readout(response, card, pred, pred_sel, card_dict):
     for solution in response[0]:
         for i in range(int(solution[1])):
             bitstrings.append(solution[0])
+            
             
     weight_vector = np.arange(1, len(card)-1)
     weight_vector = weight_vector[len(card)-3::-1]
@@ -122,7 +130,6 @@ def readout(response, card, pred, pred_sel, card_dict):
     num_relations = len(card)
     
     for i in range(len(bitstrings)):
-        #print("Bitstring " + str(i))
         bitstring = bitstrings[i]
         
         bitstring = bitstring[:len(card)*(len(card)-2)]
@@ -130,6 +137,8 @@ def readout(response, card, pred, pred_sel, card_dict):
         cost_vector = np.array(partial_bitstrings).dot(weight_vector)
         
         raw_join_order = get_raw_join_order(cost_vector)
+        #print("Raw:")
+        #print(raw_join_order)
         
         costs = get_costs_for_leftdeep_tree(raw_join_order, card, pred, pred_sel, card_dict)
         
@@ -139,7 +148,7 @@ def readout(response, card, pred, pred_sel, card_dict):
             best_costs = costs
             best_solutions_for_time.append(solution)
             
-        # Backup
+        # Fallback
         join_order = postprocess_join_order(raw_join_order, cost_vector, num_relations, pred)
         costs = get_costs_for_leftdeep_tree(join_order, card, pred, pred_sel, card_dict)
         solution = [join_order, int(costs), (time.time()-start)*1000, True]
@@ -147,6 +156,8 @@ def readout(response, card, pred, pred_sel, card_dict):
         if costs < best_costs:
             best_costs = costs
             best_solutions_for_time.append(solution)
-        
+        #print("Processed:")
+        #print(join_order)
+    
     return best_solutions_for_time, solutions
 

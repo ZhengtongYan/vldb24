@@ -1,0 +1,1 @@
+[{"time": 1, "join_order": [5, 1, 2, 0, 3, 4], "costs": 22.0}, {"time": 2, "join_order": [0, 1, 5, 2, 3, 4], "costs": 13.0}, {"time": 3, "join_order": [0, 5, 1, 2, 3, 4], "costs": 4.0}]

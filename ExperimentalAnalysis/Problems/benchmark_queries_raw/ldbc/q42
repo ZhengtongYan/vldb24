@@ -1,0 +1,24 @@
+{
+ "name": "q",
+ "relations": [
+  {"name": "r0", "baseTable": "R00", "cardinality": 36.4737, "unfilteredCardinality": 36.4737},
+  {"name": "r1", "baseTable": "R01", "cardinality": 854, "unfilteredCardinality": 854},
+  {"name": "r2", "baseTable": "R02", "cardinality": 386, "unfilteredCardinality": 386},
+  {"name": "r3", "baseTable": "R03", "cardinality": 854, "unfilteredCardinality": 854},
+  {"name": "r4", "baseTable": "R04", "cardinality": 71, "unfilteredCardinality": 71}
+ ],
+ "joins": [
+  {"relations": ["r0", "r1"]},
+  {"relations": ["r0", "r2"]},
+  {"relations": ["r1", "r2"]},
+  {"relations": ["r1", "r3"]},
+  {"relations": ["r0", "r4"]}
+ ],
+ "sizes": [
+  {"relations": ["r0", "r1"], "cardinality": 444.979},
+  {"relations": ["r0", "r2"], "cardinality": 51.0103},
+  {"relations": ["r1", "r2"], "cardinality": 1194.36},
+  {"relations": ["r1", "r3"], "cardinality": 854},
+  {"relations": ["r0", "r4"], "cardinality": 36.4737}
+ ]
+}
