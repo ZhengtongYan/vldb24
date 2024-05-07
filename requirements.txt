@@ -1,0 +1,7 @@
+numpy==1.23.5
+sympy==1.10.1
+qiskit-optimization==0.5.0
+dimod==0.12.3
+dwave-neal==0.6.0
+docplex==2.23.222
+auth0-python==3.24.1

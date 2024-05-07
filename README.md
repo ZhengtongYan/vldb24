@@ -1,12 +1,26 @@
 # Quantum-Inspired Digital Annealing for Join Ordering
 
-This repository contains code and data artifacts for "Quantum-Inspired Digital Annealing for Join Ordering", submitted to VLDB 2024.
+This repository contains a complete reproduction package, including code and data artifacts, for "Quantum-Inspired Digital Annealing for Join Ordering", accepted at VLDB 2024.
+
+## Reproduction
+
+### Build Docker Image
+
+```
+docker build -t vldb24-reproduction .
+```
+
+### Create and Run Container
+
+```
+docker run --name vldb24-reproduction -it vldb24-reproduction
+```
 
 ## Project Structure
 
-DigitalAnnealing.py and SimulatedAnnealing.py contain code for our experimental analysis, using Scripts/ProblemGenerator.py to load query data, where we consider (1) query graphs extracted from standard benchmarks (SQLite [1], TPC-H [2], TPC-DS [3], LDBC [4], Join Order Benchmark [5]) by Neumann and Radke [6], (2) synthetic chain, star and cycle queries, generated in accordance to the classic method by Steinbrunn et al. [7], using generation code by Trummer [8], and (3) synthetic tree queries by Neumann and Radke [6]. Data for all queries can be found in ExperimentalAnalysis/Problems.
+Source code for our experiments can be found in the base folder. DigitalAnnealing.py and SimulatedAnnealing.py contain code for our experimental analysis, using Scripts/ProblemGenerator.py to load query data, where we consider (1) query graphs extracted from standard benchmarks (SQLite [1], TPC-H [2], TPC-DS [3], LDBC [4], Join Order Benchmark [5]) by Neumann and Radke [6], (2) synthetic chain, star and cycle queries, generated in accordance to the classic method by Steinbrunn et al. [7], using generation code by Trummer [8], and (3) synthetic tree queries by Neumann and Radke [6]. Data for all queries can be found in ExperimentalAnalysis/Problems.
 
-Scripts/QUBOGenerator.py constructs JO-QUBO encodings based on our novel formulation method, allowing their deployment on the Fujitsu Digital Annealer [9]. Finally, Scripts/Postprocessing.py contains code for reading out join orders from each annealing solution obtained by the annealing device. Raw annealing results for all queries can be found in ExperimentalAnalysis/Data.
+base/Scripts/QUBOGenerator.py constructs JO-QUBO encodings based on our novel formulation method, allowing their deployment on the Fujitsu Digital Annealer [9]. Note that Digital Annealer access requires a valid credentials (prf) file to be placed in the base directory. Finally, base/Scripts/Postprocessing.py contains code for reading out join orders from each annealing solution obtained by the annealing device. Raw annealing results for all queries can be found in base/Experiments/Data_Col.
 
 ## References
 
